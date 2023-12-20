@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;900&family=Poppins:wght@400;800&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 666px;
+    position: relative;
+}
+
+.main .box {
+    opacity: 0.6;
+    height: 666px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+    gap: 20px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.one {
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.two {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.three {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+
+}
+
+.get-start-btn {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 12px 26px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+}
+
+.main input {
+    padding: 5px 190px 5px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.sign-in-btn {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 16px;
+    border: none;
+    margin-left: 11px;
+}
+
+.eng-btn {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 6px 20px;
+    margin-right: 11px;
+   
+}
+
+.line {
+    height:8px;
+    background-color: rgb(36, 35, 35);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: 100px auto;
+    color: white;
+}
+.text-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.image-sec{
+    position: relative;
+}
+.image-sec img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.image-sec video{
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+.image-secc{
+    position: relative;
+}
+.image-secc img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.image-secc video{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 350px;
+}
+.faq{
+    margin: 80px;
+}
+.faq>h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.que-plus{
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 26px;
+    background-color: #2d2d2d;
+    margin: 16px auto;
+    max-width: 70vw;
+    /* transition: all 3s ease-in; */
+}
+.que-plus:hover{
+    background-color: rgb(61, 60, 60);
+}
+.que-plus>p{
+    font-size: 25px;
+}
+.flexy{
+    margin: 30px 0;
+}
+footer{
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    padding: 80px;
+}
+footer>div{
+    padding: 16px 0;
+    color: rgb(173, 172, 172);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(173, 172, 172);
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+@media screen and (max-width:1000px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+    @media screen and (max-width:1000px){
+        .first{
+            flex-wrap: wrap;
+        }
+        .image-sec img{
+            width: 350px;
+        }
+        .image-sec video{
+            top: 50px;
+            width: 300px;
+        }
+        .image-secc video{
+            top: 35px;
+            left: 120px;
+            width: 160px;
+        }
+        .one{
+            font-size: 32px;
+        }
+        .two{
+            font-size: 18px;
+        }
+        .three{
+            font-size: 16px;
+        }
+        nav{
+            max-width: 90vw;
+        }
+        .flex{
+            flex-direction: column;
+        }
+        .faq>h1{
+            font-size: 40px;
+        }
+        .main input{
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+    }
